@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class MyComponent extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
     }
 
@@ -9,11 +9,11 @@ class MyComponent extends Component {
         return (
             <div>
                 <h1>{this.props.title}</h1>
+                <button onClick={this.props.onBtnClicked}>Click Me</button>
             </div>
         )
-
     }
-
 }
+
 
 export default MyComponent

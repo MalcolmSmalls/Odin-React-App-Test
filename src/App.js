@@ -1,18 +1,27 @@
 import './App.css';
 import React, { Component } from 'react';
 import MyComponent from './MyComponent'
-import { render } from '@testing-library/react';
+
 
 class App extends Component {
   constructor(props) {
     super(props)
   }
 
+  onClickBtn() {
+    this.onClickBtn = this.onClickBtn.bind(this)
+  }
+
+  onClickBtn() {
+    console.log('The button was clicked')
+  }
+  
+
 
   render(){
     return (
       <div>
-        <MyComponent title="React"></MyComponent>
+        <MyComponent title="React" onBtnClicked={this.onClickBtn}></MyComponent>
       </div>
     )
   }
