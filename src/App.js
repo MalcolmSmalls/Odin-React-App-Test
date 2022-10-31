@@ -41,6 +41,8 @@ class App extends Component {
 		super()
 
 
+
+
     this.state = {
       count: 0,
     }
@@ -52,16 +54,18 @@ class App extends Component {
 
 
 	countUp(){
+    const {count} = this.state
 		this.setState({
 			count: this.state.count + 1
 		})	
 	}
 
 	render(){
+    const {count} = this.state
 		return (
 			<div>
 				<button onClick={this.countUp}>Click Me!</button>
-				<p>{this.state.count}</p>
+				<p>{count}</p>
 			</div>
 
 		)
