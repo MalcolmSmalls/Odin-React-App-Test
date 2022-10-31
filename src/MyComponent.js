@@ -28,8 +28,9 @@ import React, { Component } from 'react'
 
 
 function MyComponent(props){
+    const { title } = props
     return (
-      <div>{props.title}</div>
+      <div>{title}</div>
     )
 }
 
