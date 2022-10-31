@@ -21,7 +21,7 @@ class App extends Component {
   render(){
     return (
       <div>
-        <MyComponent title="React" onBtnClicked={this.onClickBtn}></MyComponent>
+        <MyComponent title="React" onButtonClicked={this.onClickBtn}></MyComponent>
       </div>
     )
   }
