@@ -78,11 +78,13 @@
 
 import React, { Component } from 'react'
 import MyComponent from "./MyComponent"
+import Welcome from "./ReactDocs"
 
 function App(){
   return (
     <div>
       <MyComponent title="UP" />
+      <Welcome name = "Blu Ivy" />
     </div>
   )
 }
