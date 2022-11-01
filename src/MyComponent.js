@@ -24,14 +24,33 @@
 
 
 
-import React, { Component } from 'react'
 
 
-function MyComponent(props){
-    const { title } = props
-    return (
-      <div>{title}</div>
-    )
+// import React, { Component } from 'react'
+
+
+// function MyComponent(props){
+//     const {title} = props
+//     return (
+//       <div>{title}</div>
+//     )
+// }
+
+// export default MyComponent
+
+
+
+import React, { Component } from "react" 
+
+class MyComponent extends Component {
+    constructor(){
+        super()
+    }
+    render(){
+        return (
+            <div>{this.state.count}</div>
+        )
+    }
 }
 
 export default MyComponent
